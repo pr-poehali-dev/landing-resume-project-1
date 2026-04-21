@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const PHOTO_URL =
-  "https://cdn.poehali.dev/projects/11c37333-37d6-4104-9a0b-2e7f2f6e152b/files/f5eab8a3-5f57-4818-9180-befc5ad20e8c.jpg";
+  "https://cdn.poehali.dev/files/86a09adc-2681-4546-9826-2e68e6a1091a.png";
 
 const NAV_LINKS = [
   { label: "Главная", href: "#hero" },
