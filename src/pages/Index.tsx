@@ -245,8 +245,8 @@ export default function Index() {
                 Рост выручки через продукт, визуал и продажи
               </h1>
               <p className="opacity-0-init animate-fade-up delay-300 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mb-10">
-                Если маркетинг не даёт денег — проблема в системе. Я её
-                пересобираю: продукт, предложение, продажи и экономика
+                Если маркетинг не даёт денег — проблема не в каналах.<br />
+                Проблема в системе. Я её пересобираю: продукт, предложение, продажи и экономика
                 начинают работать вместе.
               </p>
               <div className="opacity-0-init animate-fade-up delay-400 flex flex-wrap gap-3">
@@ -313,14 +313,15 @@ export default function Index() {
           <ListItem>решения принимаются без опоры на экономику</ListItem>
         </ul>
         <p className="mt-8 text-muted-foreground italic font-['Cormorant'] text-2xl">
-          Проблема не в каналах — в системе.
+          Проблема не в каналах — в системе.<br />
+          <span className="not-italic text-foreground/70 text-xl">Если узнаёшь — ты уже теряешь деньги.</span>
         </p>
       </Section>
 
       {/* USP */}
       <Section>
         <Label>Что я делаю</Label>
-        <Heading>Система важнее инструментов.</Heading>
+        <Heading>Перевожу хаос в управляемую модель роста.<br />Система важнее инструментов.</Heading>
         <ul className="mt-2">
           <ListItem>привожу продукт и предложение в соответствие со спросом</ListItem>
           <ListItem>собираю систему: продукт × маркетинг × продажи</ListItem>
@@ -346,6 +347,7 @@ export default function Index() {
         <Label>Кейс</Label>
         <Heading>Shopping Live</Heading>
         <p className="text-muted-foreground leading-relaxed mb-10 max-w-xl">
+          <span className="block text-foreground font-['IBM_Plex_Sans'] text-sm tracking-wide mb-4">До: e-commerce не влиял на бизнес.</span>
           Пересобрал модель роста: продукт × контент × трафик × аналитика.
           Сделал e-commerce ключевым каналом бизнеса. Рост среднего чека через
           live-механику и работу с ценностью. Маркетинг стал управляться через
@@ -374,7 +376,7 @@ export default function Index() {
       {/* SCALE */}
       <Section>
         <Label>Масштаб</Label>
-        <Heading>Цифры — инструмент управления.</Heading>
+        <Heading>Масштаб работы</Heading>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
           <div className="bg-background p-8">
             <p className="font-['Cormorant'] text-4xl font-light text-foreground mb-2">
@@ -482,6 +484,37 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* FINAL CTA */}
+      <Section>
+        <p className="font-['Cormorant'] font-light text-3xl md:text-4xl text-foreground leading-tight mb-4">
+          Если бизнес упёрся в потолок — напиши.
+        </p>
+        <p className="text-muted-foreground text-base leading-relaxed mb-2">
+          Разберём, где теряются деньги и что с этим делать.
+        </p>
+        <p className="text-muted-foreground text-sm mb-10 italic font-['Cormorant'] text-lg">
+          Работаю с ограниченным числом проектов.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <a
+            href="https://t.me/AVKuzikov"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-sm hover:opacity-80 transition-opacity"
+          >
+            <Icon name="Send" size={15} />
+            Написать в Telegram
+          </a>
+          <a
+            href="mailto:alexander.kuzikov@mail.ru"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm hover:border-foreground transition-colors"
+          >
+            <Icon name="Mail" size={15} />
+            Email
+          </a>
+        </div>
+      </Section>
 
       {/* FOOTER */}
       <footer className="border-t border-border py-6">
