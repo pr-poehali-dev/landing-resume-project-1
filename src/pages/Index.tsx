@@ -220,12 +220,12 @@ export default function Index() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <Label>Контекст</Label>
-            <Heading>Fashion. Beauty. Retail.</Heading>
+            <Heading>Fashion. Beauty. Retail. FMCG.</Heading>
           </div>
           <div className="flex flex-col justify-end">
             <p className="text-base text-muted-foreground leading-relaxed mb-4">
               Федеральные и международные бренды: Shopping Live, MODIS, SELA,
-              O'STIN, New Yorker, LPP Group, FMSG.
+              O'STIN, New Yorker, LPP Group, Charuel.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               Форматы: офлайн-ритейл, e-commerce, live и TV commerce.
