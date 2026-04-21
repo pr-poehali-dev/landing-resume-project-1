@@ -457,36 +457,8 @@ export default function Index() {
         </ul>
       </Section>
 
-      {/* CTA */}
-      <section id="contacts" className="section-line bg-foreground py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <Label dark>Контакты</Label>
-          <p className="font-['Cormorant'] font-light text-3xl md:text-5xl leading-tight text-background mb-10">
-            Если нужен рост, а не имитация — можно обсудить.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="https://t.me/AVKuzikov"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-background text-foreground text-sm hover:opacity-90 transition-opacity"
-            >
-              <Icon name="Send" size={15} />
-              Написать в Telegram
-            </a>
-            <a
-              href="mailto:alexander.kuzikov@mail.ru"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-background text-sm hover:border-white transition-colors"
-            >
-              <Icon name="Mail" size={15} />
-              Email
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* FINAL CTA */}
-      <Section>
+      <Section id="contacts">
         <p className="font-['Cormorant'] font-light text-3xl md:text-4xl text-foreground leading-tight mb-4">
           Если бизнес упёрся в потолок — напиши.
         </p>
