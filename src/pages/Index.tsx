@@ -96,6 +96,74 @@ function ListItem({ children, dark = false }: { children: React.ReactNode; dark?
   );
 }
 
+const EDU_DEGREES = [
+  { year: "2019", school: "Высшая школа делового администрирования", program: "Информационно-коммуникационные технологии в обучении" },
+  { year: "2014", school: "Российский государственный университет им. А.Н. Косыгина", program: "Экономика и управление на предприятии" },
+];
+
+const EDU_COURSES = [
+  { year: "2024", title: "Практика внедрения AI-инструментов в маркетинг (ChatGPT, Midjourney, Runway)" },
+  { year: "2023", title: "Digital Leadership & AI in Marketing (Coursera)" },
+  { year: "2022", title: "Создание креативных концепций (Школа ИКРА)" },
+];
+
+function EducationSection() {
+  const [open, setOpen] = useState(false);
+  const { ref, inView } = useInView();
+
+  return (
+    <section className="section-line py-20 md:py-28">
+      <div
+        ref={ref}
+        className={`max-w-4xl mx-auto px-6 md:px-12 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+      >
+        <button
+          onClick={() => setOpen(!open)}
+          className="w-full flex items-center justify-between group"
+        >
+          <div className="text-left">
+            <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-2">Образование</p>
+            <h2 className="font-['Cormorant'] font-light text-4xl md:text-5xl text-foreground">
+              Профессиональная подготовка
+            </h2>
+          </div>
+          <span className={`text-muted-foreground transition-transform duration-300 ml-6 flex-shrink-0 ${open ? "rotate-180" : ""}`}>
+            <Icon name="ChevronDown" size={24} />
+          </span>
+        </button>
+
+        <div
+          className={`overflow-hidden transition-all duration-500 ${open ? "max-h-[800px] opacity-100 mt-10" : "max-h-0 opacity-0"}`}
+        >
+          {/* Degrees */}
+          <div className="mb-10">
+            {EDU_DEGREES.map((d) => (
+              <div key={d.year} className="flex flex-col md:flex-row md:gap-10 py-5 border-b border-border last:border-0">
+                <span className="text-xs tracking-widest uppercase text-muted-foreground w-12 flex-shrink-0 pt-1">{d.year}</span>
+                <div>
+                  <p className="font-['Cormorant'] text-xl font-light text-foreground mb-1">{d.school}</p>
+                  <p className="text-sm text-muted-foreground">{d.program}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Courses */}
+          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">Повышение квалификации</p>
+          <div>
+            {EDU_COURSES.map((c) => (
+              <div key={c.year + c.title} className="flex gap-6 py-3 border-b border-border last:border-0">
+                <span className="text-xs tracking-widest uppercase text-muted-foreground w-12 flex-shrink-0 pt-0.5">{c.year}</span>
+                <p className="text-sm text-foreground/80 leading-relaxed">{c.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Index() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -372,6 +440,9 @@ export default function Index() {
           ))}
         </div>
       </Section>
+
+      {/* EDUCATION */}
+      <EducationSection />
 
       {/* FILTER */}
       <Section>
