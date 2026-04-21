@@ -185,7 +185,7 @@ export default function Index() {
               </p>
               <div className="opacity-0-init animate-fade-up delay-400 flex flex-wrap gap-3">
                 <a
-                  href="https://t.me/"
+                  href="https://t.me/AVKuzikov"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-sm hover:opacity-80 transition-opacity"
@@ -194,7 +194,7 @@ export default function Index() {
                   Написать в Telegram
                 </a>
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/alexander-kuzikov/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm hover:border-foreground transition-colors"
@@ -203,7 +203,7 @@ export default function Index() {
                   LinkedIn
                 </a>
                 <a
-                  href="mailto:"
+                  href="mailto:alexander.kuzikov@mail.ru"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm hover:border-foreground transition-colors"
                 >
                   <Icon name="Mail" size={15} />
@@ -395,7 +395,7 @@ export default function Index() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a
-              href="https://t.me/"
+              href="https://t.me/AVKuzikov"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-background text-foreground text-sm hover:opacity-90 transition-opacity"
@@ -404,7 +404,7 @@ export default function Index() {
               Написать в Telegram
             </a>
             <a
-              href="mailto:"
+              href="mailto:alexander.kuzikov@mail.ru"
               className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-background text-sm hover:border-white transition-colors"
             >
               <Icon name="Mail" size={15} />
