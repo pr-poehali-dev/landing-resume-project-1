@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const PHOTO_URL =
-  "https://cdn.poehali.dev/files/86a09adc-2681-4546-9826-2e68e6a1091a.png";
+  "https://cdn.poehali.dev/files/15542e29-bada-4188-aa00-10b2a71e1493.png";
 
 const NAV_LINKS = [
   { label: "Главная", href: "#hero" },
@@ -163,13 +163,11 @@ export default function Index() {
         <div className="max-w-4xl mx-auto px-6 md:px-12 py-24 md:py-36">
           <div className="flex flex-col md:flex-row md:items-start md:gap-16 gap-10">
             <div className="flex-shrink-0 opacity-0-init animate-fade-in">
-              <div className="w-28 h-28 md:w-36 md:h-36 overflow-hidden bg-muted">
-                <img
-                  src={PHOTO_URL}
-                  alt="Александр Кузиков"
-                  className="w-full h-full object-cover object-top grayscale"
-                />
-              </div>
+              <img
+                src={PHOTO_URL}
+                alt="Александр Кузиков"
+                className="w-48 md:w-64 object-contain"
+              />
             </div>
             <div className="flex-1">
               <p className="opacity-0-init animate-fade-up delay-100 text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">
